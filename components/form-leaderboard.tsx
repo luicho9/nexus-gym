@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
-import { PILLAR_WEIGHTS } from "@/lib/condition";
 import { GOAL_WEIGHTS, type OverviewEntry } from "@/lib/rankings";
 import { cn } from "@/lib/utils";
 
@@ -47,7 +46,7 @@ export function FormLeaderboard({ entries }: { entries: OverviewEntry[] }) {
                     {GOAL_WEIGHTS[entry.member.goal].label}
                   </span>
                   <span className="font-mono text-xl tabular-nums">
-                    {entry.condition.total.toFixed(1)}
+                    {entry.latest.score.toFixed(1)}
                   </span>
                 </div>
 
@@ -88,11 +87,9 @@ export function FormLeaderboard({ entries }: { entries: OverviewEntry[] }) {
       </CardContent>
       <Separator />
       <div className="px-6 pt-1 text-xs/relaxed text-muted-foreground">
-        <span className="text-foreground">Score</span> is these three combined:{" "}
-        {`Lean is body fat rate at ${PILLAR_WEIGHTS.leanness * 100}%, Muscle is
-        FFMI at ${PILLAR_WEIGHTS.muscle * 100}%, Health is visceral fat at ${
-          PILLAR_WEIGHTS.visceral * 100
-        }%.`}
+        Ranked by the health score from the scale. The bars are context: Lean is
+        body fat rate, Muscle is FFMI, Health is visceral fat, each scored out
+        of 100.
       </div>
     </Card>
   );

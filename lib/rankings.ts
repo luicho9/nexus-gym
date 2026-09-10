@@ -110,8 +110,9 @@ export type OverviewEntry = {
   previous?: Scan;
   height: number;
   ffmi: number;
+  /** Composition breakdown, shown as context. Not what the form board ranks on. */
   condition: Condition;
-  /** Rank on the condition board, where 1 is the best current shape. */
+  /** Rank on the form board, by the scale's own health score. */
   conditionRank: number;
   /** Progress since the previous weigh-in, absent during the baseline period. */
   progress: ProgressBreakdown | null;
@@ -146,7 +147,7 @@ export function overviewBoard(): OverviewEntry[] {
 
   const conditionRanks = new Map(
     [...rows]
-      .sort((a, b) => b.condition.total - a.condition.total)
+      .sort((a, b) => b.latest.score - a.latest.score)
       .map((row, i) => [row.member.id, i + 1]),
   );
 

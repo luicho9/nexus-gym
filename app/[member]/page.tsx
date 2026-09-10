@@ -3,7 +3,6 @@ import { notFound } from "next/navigation";
 import { ScanCard } from "@/components/scan-card";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { conditionOf } from "@/lib/condition";
 import { getMember, getMembers, getScans } from "@/lib/data";
 import { ffmi, heightFor } from "@/lib/metrics";
 import { GOAL_WEIGHTS, progressBetween } from "@/lib/rankings";
@@ -21,7 +20,6 @@ export default async function MemberPage({ params }: PageProps<"/[member]">) {
 
   const previous = scans.at(-2);
   const height = heightFor(scans);
-  const condition = conditionOf(latest, scans, member.sex);
   const progress = previous
     ? progressBetween(previous, latest, member.goal)
     : null;
@@ -42,7 +40,7 @@ export default async function MemberPage({ params }: PageProps<"/[member]">) {
       </header>
 
       <div className="mb-8 grid grid-cols-4 gap-3">
-        <Stat label="Form" value={condition.total.toFixed(1)} />
+        <Stat label="Score" value={latest.score.toFixed(1)} />
         <Stat label="Weight" value={`${latest.weight.toFixed(1)}kg`} />
         <Stat label="Fat mass" value={`${latest.fatMass.toFixed(1)}kg`} />
         <Stat label="Lean mass" value={`${latest.leanMass.toFixed(1)}kg`} />
