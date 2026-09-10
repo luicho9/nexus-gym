@@ -120,6 +120,30 @@ export type OverviewEntry = {
   progressRank: number | null;
 };
 
+/**
+ * Ranks by a score, highest first. Equal scores share a rank and the next rank
+ * skips accordingly, so two members tied at 1 are followed by 3.
+ */
+function rankMap<T extends { member: Member }>(
+  rows: T[],
+  score: (row: T) => number,
+): Map<string, number> {
+  const sorted = [...rows].sort((a, b) => score(b) - score(a));
+  const ranks = new Map<string, number>();
+
+  let rank = 0;
+  let previous: number | null = null;
+
+  sorted.forEach((row, i) => {
+    const value = score(row);
+    if (previous === null || value !== previous) rank = i + 1;
+    ranks.set(row.member.id, rank);
+    previous = value;
+  });
+
+  return ranks;
+}
+
 /** Every member with their latest numbers, ranked on both boards. */
 export function overviewBoard(): OverviewEntry[] {
   const rows = getMembers().flatMap((member) => {
@@ -145,20 +169,12 @@ export function overviewBoard(): OverviewEntry[] {
     ];
   });
 
-  const conditionRanks = new Map(
-    [...rows]
-      .sort((a, b) => b.latest.score - a.latest.score)
-      .map((row, i) => [row.member.id, i + 1]),
-  );
+  const conditionRanks = rankMap(rows, (row) => row.latest.score);
 
   const hasProgress = rows.some((r) => r.progress);
-  const progressRanks = new Map(
-    hasProgress
-      ? [...rows]
-          .sort((a, b) => (b.progress?.total ?? 0) - (a.progress?.total ?? 0))
-          .map((row, i) => [row.member.id, i + 1] as const)
-      : [],
-  );
+  const progressRanks = hasProgress
+    ? rankMap(rows, (row) => row.progress?.total ?? 0)
+    : new Map<string, number>();
 
   return rows
     .map((row) => ({

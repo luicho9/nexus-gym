@@ -53,6 +53,12 @@
       "name": "Diego",
       "sex": "male",
       "goal": "gain"
+    },
+    {
+      "id": "juda",
+      "name": "Juda",
+      "sex": "male",
+      "goal": "recomp"
     }
   ],
   "scans": [
@@ -325,6 +331,36 @@
           "Lean bulk on a small surplus, around 300kcal. His body fat has room to absorb a slow gain without leaving the ideal band.",
           "Reaching FFMI 21 means adding about 3.7kg of lean mass, which would put him near 70kg.",
           "Protein around 135g a day, with progressive overload. This is the only lever left for him."
+        ]
+      }
+    },
+    {
+      "memberId": "juda",
+      "measuredAt": "2026-09-10T10:51:32",
+      "weight": 72.5,
+      "bmi": 25.1,
+      "bodyFatRate": 18.4,
+      "muscleMass": 49.8,
+      "fatMass": 13.3,
+      "leanMass": 59.2,
+      "bodyFatIndex": 4,
+      "obesityLevel": 2,
+      "visceralFatIndex": 6,
+      "bodyWater": 59.0,
+      "boneMass": 3.0,
+      "proteinRate": 18.7,
+      "bmr": 1648,
+      "metabolicAge": 25,
+      "idealWeight": 63.0,
+      "weightControl": 9.5,
+      "score": 89.6,
+      "analysis": {
+        "summary": "Juda lands on exactly the same score as Alex Cortes, 89.6, and the two reports are near twins: 72.5kg against 72.8kg, both around 1.70m. Juda is the slightly better of the two underneath, 18.4% body fat against 19.2% and an FFMI of 20.5 against 20.1, which is a fair illustration of how coarse the scale's score is. His only flag is the BMI at 25.1 reading Overweight, which his 18.4% body fat contradicts. Visceral fat of 6, protein 18.7% and a metabolic age of 25 are all clean.",
+        "recommendations": [
+          "The 63kg ideal weight would take most of his fat and then some. He carries 13.3kg of fat in total and the report wants 9.5kg gone.",
+          "Recomp. He is at a good weight already, so the work is shifting the composition rather than moving the scale.",
+          "Reaching FFMI 21 means adding about 1.5kg of lean mass, the closest anyone here is to that mark without already passing it.",
+          "Protein around 120g a day. At 18.4% body fat the muscle is the only thing left worth chasing."
         ]
       }
     }
