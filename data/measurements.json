@@ -41,6 +41,18 @@
       "name": "Alex Cortes",
       "sex": "male",
       "goal": "recomp"
+    },
+    {
+      "id": "valerie",
+      "name": "Valerie",
+      "sex": "female",
+      "goal": "cut"
+    },
+    {
+      "id": "diego",
+      "name": "Diego",
+      "sex": "male",
+      "goal": "gain"
     }
   ],
   "scans": [
@@ -252,6 +264,67 @@
           "Recomp rather than cut. Hold weight roughly steady and let the 19.2% body fat come down while the muscle goes up.",
           "Reaching FFMI 21 means adding about 2.6kg of lean mass, which is a realistic year of consistent lifting.",
           "Protein around 120g a day, and progressive overload. The Low muscle flag is the only thing here worth chasing."
+        ]
+      }
+    },
+    {
+      "memberId": "valerie",
+      "measuredAt": "2026-09-07T10:31:24",
+      "sourceUnit": "lb",
+      "weight": 65.0,
+      "bmi": 25.4,
+      "bodyFatRate": 31.1,
+      "muscleMass": 40.3,
+      "fatMass": 20.1,
+      "leanMass": 44.7,
+      "bodyFatIndex": 4,
+      "obesityLevel": 2,
+      "visceralFatIndex": 4,
+      "bodyWater": 47.4,
+      "boneMass": 2.6,
+      "proteinRate": 15.9,
+      "bmr": 1337,
+      "metabolicAge": 26,
+      "idealWeight": 54.0,
+      "weightControl": 11.0,
+      "score": 82.7,
+      "analysis": {
+        "summary": "Her report is printed in pounds, so every mass here was converted on the way in: 143.2lb is 65.0kg. Read against female bands the picture is much better than the two red flags suggest. Her visceral fat index is 4, the lowest of anyone on the board, and the scale marked her muscle mass Excellent, which her FFMI of 17.5 supports. Obesity level came back Healthy and her metabolic age is 26. The one real number to work on is body fat at 31.1%, which sits at the top of the average band for women. The Low protein rate is not a separate issue, it follows from the fat percentage the same way it does for Natalie.",
+        "recommendations": [
+          "The 119lb ideal weight is far too aggressive. Holding all her lean mass at that weight would put her near 17% body fat, which is athlete territory for a woman, not a maintenance target.",
+          "Moderate deficit, around 400kcal. With visceral fat at 4 and muscle already flagged Excellent there is no reason to rush.",
+          "First milestone is 28% body fat, roughly 62kg or 137lb with her lean mass kept.",
+          "Protein near 110g a day and keep resistance training. The muscle she has is the reason her numbers hold up despite the BMI flag."
+        ]
+      }
+    },
+    {
+      "memberId": "diego",
+      "measuredAt": "2026-09-10T09:42:56",
+      "weight": 66.7,
+      "bmi": 23.9,
+      "bodyFatRate": 17.7,
+      "muscleMass": 49.0,
+      "fatMass": 11.8,
+      "leanMass": 54.9,
+      "bodyFatIndex": 4,
+      "obesityLevel": 1,
+      "visceralFatIndex": 5,
+      "bodyWater": 59.1,
+      "boneMass": 2.7,
+      "proteinRate": 18.8,
+      "bmr": 1556,
+      "metabolicAge": 21,
+      "idealWeight": 60.9,
+      "weightControl": 5.8,
+      "score": 92.4,
+      "analysis": {
+        "summary": "Diego's report is the cleanest here: every single line reads Ideal or Healthy, Ideal Type on the body chart, a metabolic age of 21 and a score of 92.4, second only to Jose Luis. At 17.7% body fat and a visceral fat index of 5 there is nothing to correct. What the report does not say is that his FFMI is 19.7, which puts him in the same bracket as Jose Luis and Alex: healthy and lean, but carrying less muscle for his frame than the men in the middle of the board.",
+        "recommendations": [
+          "Ignore the 5.8kg Lose Weight line. At 17.7% body fat there is nothing worth removing.",
+          "Lean bulk on a small surplus, around 300kcal. His body fat has room to absorb a slow gain without leaving the ideal band.",
+          "Reaching FFMI 21 means adding about 3.7kg of lean mass, which would put him near 70kg.",
+          "Protein around 135g a day, with progressive overload. This is the only lever left for him."
         ]
       }
     }
