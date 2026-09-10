@@ -35,6 +35,12 @@
       "name": "Natalie",
       "sex": "female",
       "goal": "cut"
+    },
+    {
+      "id": "alex",
+      "name": "Alex Cortes",
+      "sex": "male",
+      "goal": "recomp"
     }
   ],
   "scans": [
@@ -216,6 +222,36 @@
           "Moderate deficit, around 400kcal, and resistance training. She already has lean mass worth protecting.",
           "Protein near 110g a day, which is what keeps that 43.8kg of lean mass through a cut.",
           "First milestone is 30% body fat, roughly 62.6kg with lean mass kept. Set the next target from there rather than aiming at a weight now."
+        ]
+      }
+    },
+    {
+      "memberId": "alex",
+      "measuredAt": "2026-09-08T07:56:50",
+      "weight": 72.8,
+      "bmi": 24.9,
+      "bodyFatRate": 19.2,
+      "muscleMass": 48.5,
+      "fatMass": 13.9,
+      "leanMass": 58.8,
+      "bodyFatIndex": 4,
+      "obesityLevel": 1,
+      "visceralFatIndex": 7,
+      "bodyWater": 58.7,
+      "boneMass": 3.0,
+      "proteinRate": 18.5,
+      "bmr": 1641,
+      "metabolicAge": 30,
+      "idealWeight": 63.7,
+      "weightControl": 9.1,
+      "score": 89.6,
+      "analysis": {
+        "summary": "Every line on Alex's report reads Ideal except one, and that one is the interesting part. Muscle Mass comes back Low, and unlike Meraz's Low flag this one holds up against his frame too: his FFMI is 20.1, below Sebas, Daniel and Meraz. At 1.71m and 19.2% body fat he is in genuinely good shape with nothing to fix urgently, he is just carrying less muscle than the men above him on the board. Visceral fat of 7 and a metabolic age of 30 marked Younger back that up.",
+        "recommendations": [
+          "The 63.7kg ideal weight is not the target. He only carries 13.9kg of fat in total, so dropping 9.1kg would come substantially out of lean mass.",
+          "Recomp rather than cut. Hold weight roughly steady and let the 19.2% body fat come down while the muscle goes up.",
+          "Reaching FFMI 21 means adding about 2.6kg of lean mass, which is a realistic year of consistent lifting.",
+          "Protein around 120g a day, and progressive overload. The Low muscle flag is the only thing here worth chasing."
         ]
       }
     }
