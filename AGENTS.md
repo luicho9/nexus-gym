@@ -7,3 +7,9 @@ This version has breaking changes — APIs, conventions, and file structure may 
 This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
 
 <!-- END:nextjs-agent-rules -->
+
+# Nexus Gym
+
+Measurements live in `data/measurements.json` and are the only thing that changes month to month. When Luicho pastes scale report images, follow `docs/monthly-update.md`.
+
+Do not use em dashes in UI copy, comments, or docs.

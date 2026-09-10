@@ -1,0 +1,223 @@
+{
+  "members": [
+    {
+      "id": "daniel",
+      "name": "Daniel",
+      "goal": "recomp",
+      "sex": "male"
+    },
+    {
+      "id": "aroldo",
+      "name": "Aroldo",
+      "goal": "cut",
+      "sex": "male"
+    },
+    {
+      "id": "sebas",
+      "name": "Sebas",
+      "sex": "male",
+      "goal": "recomp"
+    },
+    {
+      "id": "meraz",
+      "name": "Meraz",
+      "sex": "male",
+      "goal": "cut"
+    },
+    {
+      "id": "joseluis",
+      "name": "Jose Luis",
+      "sex": "male",
+      "goal": "gain"
+    },
+    {
+      "id": "natalie",
+      "name": "Natalie",
+      "sex": "female",
+      "goal": "cut"
+    }
+  ],
+  "scans": [
+    {
+      "memberId": "daniel",
+      "measuredAt": "2026-09-07T10:20:18",
+      "weight": 87.4,
+      "bmi": 26.1,
+      "bodyFatRate": 18.9,
+      "muscleMass": 50.4,
+      "fatMass": 16.5,
+      "leanMass": 70.9,
+      "bodyFatIndex": 4,
+      "obesityLevel": 2,
+      "visceralFatIndex": 7,
+      "bodyWater": 58.0,
+      "boneMass": 3.5,
+      "proteinRate": 18.4,
+      "bmr": 1901,
+      "metabolicAge": 28,
+      "idealWeight": 72.1,
+      "weightControl": 15.3,
+      "score": 87.4,
+      "analysis": {
+        "summary": "BMI says overweight at 26.1, body fat says otherwise at 18.9%. That gap is the whole story: Daniel carries 70.9kg of lean mass at 1.83m, an FFMI of 21.2, which is what pushes the BMI up. Visceral fat of 7 sits comfortably in the ideal band. The scale's advice to drop 15.3kg and reach 72.1kg would mean giving up real muscle, since holding all of his current lean mass at a genuinely lean 12% body fat would still put him at roughly 80.6kg.",
+        "recommendations": [
+          "Ignore the 72.1kg ideal weight target. It is derived from BMI and does not account for how much lean mass he is carrying.",
+          "Recomp rather than cut. A small deficit of around 300kcal keeps the lean mass while the fat comes off slowly.",
+          "Realistic next target is 15% body fat, which lands near 83.4kg with lean mass intact. Reassess there rather than chasing a number on the scale.",
+          "Keep protein around 140g a day to protect the lean mass that is currently driving his score."
+        ]
+      }
+    },
+    {
+      "memberId": "aroldo",
+      "measuredAt": "2026-09-08T11:02:13",
+      "weight": 83.0,
+      "bmi": 30.5,
+      "bodyFatRate": 26.0,
+      "muscleMass": 48.6,
+      "fatMass": 21.5,
+      "leanMass": 61.4,
+      "bodyFatIndex": 5,
+      "obesityLevel": 4,
+      "visceralFatIndex": 11,
+      "bodyWater": 53.8,
+      "boneMass": 3.0,
+      "proteinRate": 16.8,
+      "bmr": 1697,
+      "metabolicAge": 39,
+      "idealWeight": 59.5,
+      "weightControl": 23.5,
+      "score": 75.0,
+      "analysis": {
+        "summary": "The report flags Aroldo on almost every line, but the underlying picture is more specific than that. His FFMI is 22.6, higher than Daniel's, meaning he carries more muscle for his frame than anyone else on the board. His issue is fat, not a lack of muscle: 21.5kg of it at 26.0% body fat. The number that actually matters is visceral fat at 11, which crosses into the alert band at 10 and is the one metric here tied to real health risk rather than appearance.",
+        "recommendations": [
+          "Getting visceral fat under 10 is the first target. It responds faster to a deficit than total body fat does.",
+          "Moderate deficit of around 500kcal. Aggressive dieting would cost him the muscle that is currently his strongest asset, and the points system penalises exactly that.",
+          "Protein near 120g a day, roughly 2g per kg of lean mass, to hold that 61.4kg of lean while cutting.",
+          "At 20% body fat with all lean mass kept he would weigh about 76.8kg. That is the realistic first milestone, not the 59.5kg the scale suggests."
+        ]
+      }
+    },
+    {
+      "memberId": "sebas",
+      "measuredAt": "2026-09-08T11:05:55",
+      "weight": 76.2,
+      "bmi": 26.1,
+      "bodyFatRate": 18.0,
+      "muscleMass": 51.6,
+      "fatMass": 13.7,
+      "leanMass": 62.5,
+      "bodyFatIndex": 4,
+      "obesityLevel": 2,
+      "visceralFatIndex": 7,
+      "bodyWater": 58.6,
+      "boneMass": 3.1,
+      "proteinRate": 18.7,
+      "bmr": 1720,
+      "metabolicAge": 25,
+      "idealWeight": 63.7,
+      "weightControl": 12.5,
+      "score": 87.8,
+      "analysis": {
+        "summary": "Sebas tops the form board, and like Daniel he is a BMI false positive. His BMI of 26.1 reads Overweight while his body fat sits at 18.0%, because he carries 62.5kg of lean mass at 1.71m for an FFMI of 21.4. Visceral fat of 7 is well inside the ideal band and his metabolic age came back at 25, the second youngest in the group. There is no problem visible in this report, which makes him the clearest recomp case here.",
+        "recommendations": [
+          "The 63.7kg ideal weight on the report is not a target. Reaching it would mean shedding roughly 12.5kg when he only carries 13.7kg of fat in total.",
+          "Hold weight roughly steady and let the composition shift. He has no fat to rush off.",
+          "A realistic next mark is 15% body fat, about 73.5kg with his lean mass intact.",
+          "Protein around 125g a day. At this body fat the win comes from adding lean mass, not subtracting weight."
+        ]
+      }
+    },
+    {
+      "memberId": "meraz",
+      "measuredAt": "2026-09-07T10:18:14",
+      "sourceUnit": "lb",
+      "weight": 94.1,
+      "bmi": 27.2,
+      "bodyFatRate": 20.0,
+      "muscleMass": 49.2,
+      "fatMass": 18.8,
+      "leanMass": 75.3,
+      "bodyFatIndex": 4,
+      "obesityLevel": 3,
+      "visceralFatIndex": 8,
+      "bodyWater": 57.6,
+      "boneMass": 3.6,
+      "proteinRate": 18.2,
+      "bmr": 1996,
+      "metabolicAge": 30,
+      "idealWeight": 74.1,
+      "weightControl": 19.9,
+      "score": 84.6,
+      "analysis": {
+        "summary": "His report is printed in pounds, so every mass here was converted on the way in: 207.4lb is 94.1kg. The scale flags his muscle mass as Low, but that flag is measured against his bodyweight, not his frame. By FFMI he is at 21.8, the second highest in the group, so he is not short on muscle, he is carrying 18.8kg of fat on top of it. Body fat of 20.0% and visceral fat of 8 both sit just inside acceptable, which makes this a straightforward cut rather than anything urgent.",
+        "recommendations": [
+          "Ignore the Low muscle mass flag. At FFMI 21.8 he carries more muscle for his height than everyone here except Aroldo.",
+          "Moderate deficit, around 500kcal. He is close enough to the good bands that there is no reason to be aggressive.",
+          "First milestone is 15% body fat, roughly 88.6kg or 195lb with his lean mass kept.",
+          "Protein near 150g a day, and keep lifting. At a 500kcal deficit the lean mass only stays if it is being used."
+        ]
+      }
+    },
+    {
+      "memberId": "joseluis",
+      "measuredAt": "2026-09-08T07:56:54",
+      "weight": 64.0,
+      "bmi": 22.9,
+      "bodyFatRate": 15.9,
+      "muscleMass": 50.1,
+      "fatMass": 10.1,
+      "leanMass": 53.8,
+      "bodyFatIndex": 4,
+      "obesityLevel": 1,
+      "visceralFatIndex": 5,
+      "bodyWater": 60.3,
+      "boneMass": 2.7,
+      "proteinRate": 19.2,
+      "bmr": 1533,
+      "metabolicAge": 18,
+      "idealWeight": 60.9,
+      "weightControl": 3.1,
+      "score": 95.3,
+      "analysis": {
+        "summary": "The scale gave Jose Luis the highest score in the group at 95.3, and on every health marker it is right: 15.9% body fat, visceral fat of 5, BMI 22.9, metabolic age 18. He places fourth on the form board anyway, and the reason is the muscle pillar, where he scores 53. His FFMI of 19.3 is the lowest here. He is genuinely lean, he is just light. Nothing in this report needs fixing, which is exactly why building is the useful goal for him.",
+        "recommendations": [
+          "Do not cut. At 15.9% body fat there is nothing to take off, and the report's 3.1kg Lose Weight line is noise.",
+          "Lean bulk on a small surplus, around 300 to 400kcal. Bigger surpluses buy fat, not speed.",
+          "Reaching FFMI 21 means adding about 4.9kg of lean mass, which would put him near 69kg at a similar body fat.",
+          "Protein around 130g a day, and expect roughly 0.25kg a week. This is a slow goal by nature."
+        ]
+      }
+    },
+    {
+      "memberId": "natalie",
+      "measuredAt": "2026-09-07T10:17:23",
+      "weight": 68.9,
+      "bmi": 29.8,
+      "bodyFatRate": 36.5,
+      "muscleMass": 37.0,
+      "fatMass": 25.1,
+      "leanMass": 43.8,
+      "bodyFatIndex": 4,
+      "obesityLevel": 4,
+      "visceralFatIndex": 6,
+      "bodyWater": 43.6,
+      "boneMass": 2.7,
+      "proteinRate": 14.4,
+      "bmr": 1315,
+      "metabolicAge": 33,
+      "idealWeight": 49.2,
+      "weightControl": 19.7,
+      "score": 71.2,
+      "analysis": {
+        "summary": "Read against female reference bands rather than the male ones, this report is more mixed than its badges suggest. Her FFMI is 18.9, which is strong for 1.52m and scores 79 on the muscle pillar, second only to Aroldo. Her visceral fat is 6, one of the best numbers in the whole group, meaning the fat she carries is largely subcutaneous rather than packed around the organs, which is the lower risk pattern. The one real issue is body fat rate at 36.5%. The Low flags on body water and protein rate are not separate problems, they follow arithmetically from a high fat percentage, since fat tissue holds less water than lean tissue does.",
+        "recommendations": [
+          "The 49.2kg ideal weight is not usable. Losing 19.7kg when she only carries 25.1kg of fat would take most of her lean mass with it.",
+          "Moderate deficit, around 400kcal, and resistance training. She already has lean mass worth protecting.",
+          "Protein near 110g a day, which is what keeps that 43.8kg of lean mass through a cut.",
+          "First milestone is 30% body fat, roughly 62.6kg with lean mass kept. Set the next target from there rather than aiming at a weight now."
+        ]
+      }
+    }
+  ]
+}
